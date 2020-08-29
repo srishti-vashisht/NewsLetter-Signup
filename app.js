@@ -21,12 +21,12 @@ app.post("/",function(req,res){
     var firstName = req.body.fName;
     var lastName = req.body.lName;
     var Email = req.body.Email;
-    console.log(mail);
+    console.log(Email);
 })
 
 /*
 ba234c27c662811c98c8604b33b14ffc-us17
-
+*/
 app.listen(3000,function(req,res){
     console.log("Server is running on port 3000");
 })
