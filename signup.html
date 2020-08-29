@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
-    <link href="styles.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
     <!--Adding Bootstrap scripts - JavaScript , jQuery ,Popper.js ,JavaScript plugins-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -21,12 +21,12 @@
 
   </head>
   <body class="text-center">
-    <form class="form-signin">
+  <form action ="/" class="form-signin" method = "POST">                          <!--action - where post request will be sent-->
   <img class="mb-4" src="/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
   <h1 class="h3 mb-3 font-weight-normal">Subscribe To My Newsletter</h1>
-  <input type="text" class="form-control top" placeholder="First Name" required autofocus>         <!--required field and autofocus - when we load website will point to this field first-->
-  <input type="text" class="form-control middle" placeholder="Last Name" required>
-  <input type="email" class="form-control bottom" placeholder="Email" required>                      <!--form-controlis custom class"-->
+  <input type="text" class="form-control top" name="fName" placeholder="First Name" required autofocus>         <!--required field and autofocus - when we load website will point to this field first-->
+  <input type="text" class="form-control middle" name = "lName" placeholder="Last Name" required>
+  <input type="email" class="form-control bottom" name= "Email" placeholder="Email" required>                      <!--form-controlis custom class"-->
    
   <button class="btn btn-lg btn-primary btn-block" type="submit">Subscribe</button>
   <p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p>
