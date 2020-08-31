@@ -80,7 +80,8 @@ ba234c27c662811c98c8604b33b14ffc-us17
 /* List id
 879d62918c */
 
-app.listen(3000,function(req,res){
+/*app will work on heroku as well as localhost on port 3000*/
+app.listen(process.env.PORT || 3000,function(req,res){                            /*process.env.PORT is dynamic port and process object is defined by heroku,heroku server on which our website hosted will define on the GO*/
     console.log("Server is running on port 3000");
 })
 
